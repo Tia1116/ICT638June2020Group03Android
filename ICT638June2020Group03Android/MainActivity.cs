@@ -1,27 +1,60 @@
-﻿using Android.App;
+﻿using System;
+using Android.App;
 using Android.OS;
-using Android.Support.V7.App;
 using Android.Runtime;
+using Android.Support.Design.Widget;
+using Android.Support.V7.App;
+using Android.Views;
 using Android.Widget;
+using Android.Support.V7.Widget;
+
 
 namespace ICT638June2020Group03Android
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
+    [Activity(MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
+        RecyclerView mRecycleView;
+        RecyclerView.LayoutManager mLayoutManager;
+        PhotoAlbum mPhotoAlbum;
+        PhotoAdapter mAdapter;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+
+
+
+            mPhotoAlbum = new PhotoAlbum();
+
+
+
+
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
-        }
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
-        {
-            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 
-            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+
+
+
+            mLayoutManager = new LinearLayoutManager(this);
+
+
+
+            mAdapter = new PhotoAdapter(mPhotoAlbum);
+            mAdapter.ItemClick += MAdapter_ItemClick;
+
+
+
+            mRecycleView = FindViewById<RecyclerView>(Resource.Id.recyclerView);
+            mRecycleView.SetLayoutManager(mLayoutManager);
+            mRecycleView.SetAdapter(mAdapter);
         }
-        //123
+        private void MAdapter_ItemClick(object sender, int e)
+        {
+            int photoNum = e + 1;
+            Toast.MakeText(this, "This is photo number " + photoNum, ToastLength.Short).Show();
+        }
+
+
+
     }
 }
