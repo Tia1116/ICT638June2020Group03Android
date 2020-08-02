@@ -106,12 +106,17 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\layout1.xml">
+    <AndroidResource Include="Resources\layout\activity_add_user_details.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\layout2.xml">
+    <AndroidResource Include="Resources\layout\activity_delete_user_details.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_login.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
