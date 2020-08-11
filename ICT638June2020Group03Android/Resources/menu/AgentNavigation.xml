@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--For all properties see: https://aka.ms/android-menu-resource-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <item
+  android:id="@+id/navigation_house"
+  android:icon="@drawable/houses"
+  android:title="@string/title_house"/>
+
+  <item
+  android:id="@+id/navigation_agent"
+  android:icon="@drawable/agent"
+  android:title="@string/title_Agent"/>
+
+  <item
+  android:id="@+id/navigation_user"
+  android:icon="@drawable/user"
+  android:title="@string/title_user"/>
+
+</menu>
+
+<!-- Code to implement into Activity:
+
+Android.Widget.SearchView searchView;
+public override bool OnCreateOptionsMenu(IMenu menu)
+{
+  this.MenuInflater.Inflate(Resource.Menu.AgentNavigation, menu);
+
+  var searchItem = menu.FindItem(Resource.Id.action_search);
+
+  searchView = searchItem.ActionProvider.JavaCast<Android.Widget.SearchView>();
+
+  searchView.QueryTextSubmit += (sender, args) =>
+  {
+    Toast.MakeText(this, "You searched: " + args.Query, ToastLength.Short).Show();
+
+  };
+
+
+  return base.OnCreateOptionsMenu(menu);
+}
+
+-->
