@@ -1,4 +1,11 @@
 <resources>
-    <string name="app_name">ICT638June2020Group03Android</string>
-    <string name="action_settings">Settings</string>
+	<string name="app_name">Share_SMS</string>
+	<string name="action_settings">Settings</string>
+	<string name="tv1Text">Test</string>
+	<string name="btn1Text">Share</string>
+	<string name="btn2Text">SMS</string>
+	<string name="title_home">Home</string>
+	<string name="title_dashboard">Dashboard</string>
+	<string name="title_notifications">Notifications</string>
+
 </resources>
