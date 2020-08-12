@@ -20,8 +20,8 @@ namespace ICT638June2020Group03Android
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
-            
 
 
+        }
     }
 }
