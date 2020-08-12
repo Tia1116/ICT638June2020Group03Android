@@ -1,7 +1,9 @@
 ﻿using Android.App;
 using Android.OS;
-using Android.Support.V7.App;
 using Android.Runtime;
+using Android.Support.Design.Widget;
+using Android.Support.V7.App;
+using Android.Views;
 using Android.Widget;
 using System.Net;
 using System.IO;
@@ -9,6 +11,14 @@ using System.Text;
 using System;
 using Newtonsoft.Json;
 using ICT638June2020Group03Android.Activities;
+
+using Android.Content;
+=======
+using Xamarin.Essentials;
+using System;
+using Android.Gms.Maps;
+using Android.Gms.Maps.Model;
+using System.Linq;
 
 namespace ICT638June2020Group03Android
 {
@@ -19,8 +29,10 @@ namespace ICT638June2020Group03Android
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_login);
+
 
             Button btn_login = FindViewById<Button>(Resource.Id.btn_login);
             btn_login.Click += Btn_login_Click;
@@ -61,7 +73,9 @@ namespace ICT638June2020Group03Android
             {
                 StartActivity(typeof(DetailActivity));
             }
+
         }
+
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
@@ -69,5 +83,6 @@ namespace ICT638June2020Group03Android
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+
     }
 }
