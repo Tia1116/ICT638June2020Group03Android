@@ -14,6 +14,8 @@ namespace ICT638June2020Group03Android
 {
     class agentFragment:Fragment
     {
+        //tia
+        TextView txv;
         View rootView;
         public override void OnCreate(Bundle savedInstanceState)
         {
