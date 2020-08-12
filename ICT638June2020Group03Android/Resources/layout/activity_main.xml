@@ -1,7 +1,67 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-</RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:text="Test Text this is to test the logic before w e put in a  tab layout" 
+       
+        />
+    <Button
+        android:id="@+id/btn_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:text="Add user "
+
+        />
+     <Button
+        android:id="@+id/btn_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:text="List"
+
+        />
+
+     <Button
+        android:id="@+id/btn_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:text="Update User "
+
+        />
+     <Button
+        android:id="@+id/btn_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:text="Delete User "
+
+        />
+      <Button
+        android:id="@+id/btn_maps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:text="Maps "
+
+        />
+    
+    <Button
+        android:id="@+id/btn_login_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:text="Login Page "
+
+        />
+
+  
+    <Button
+        android:id="@+id/btn_share_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:text="share Page "
+
+        />
+</LinearLayout>

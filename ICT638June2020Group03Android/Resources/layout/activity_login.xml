@@ -3,9 +3,38 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+  <TextView
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent"
+      android:text="Login Paage"
+      android:textColor="#f369"/>
+  <EditText
+ android:id="@+id/txt_email_address_del"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+ android:hint="Email Address"
+        />
+
+  <EditText
+   android:id="@+id/txt_password_del"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+        android:inputType="textPassword"
+   android:hint="Password"
+        />        
+
+
+
+
+  <Button
+          android:id="@+id/btn_login"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Login"/>
+         <Button
+          android:id="@+id/btn_register_page"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="navaigate to register"/>
 
 </LinearLayout>
