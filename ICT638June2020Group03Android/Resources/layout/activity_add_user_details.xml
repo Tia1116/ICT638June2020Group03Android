@@ -67,5 +67,5 @@ android:hint="Country"
           android:id="@+id/btn_home"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:text="Home"/>
+      android:text="Back To Login"/>
 </LinearLayout>
