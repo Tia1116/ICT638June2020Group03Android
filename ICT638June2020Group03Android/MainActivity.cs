@@ -1,19 +1,29 @@
 ﻿using Android.App;
 using Android.OS;
-using Android.Support.V7.App;
 using Android.Runtime;
+using Android.Support.Design.Widget;
+using Android.Support.V7.App;
+using Android.Views;
 using Android.Widget;
+
 using Android.Content;
+=======
+using Xamarin.Essentials;
+using System;
+using Android.Gms.Maps;
+using Android.Gms.Maps.Model;
+using System.Linq;
 
 namespace ICT638June2020Group03Android
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
-    {  //tia
+    {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_login);
 
@@ -33,7 +43,6 @@ namespace ICT638June2020Group03Android
         {
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
 
-            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-        }
+
     }
 }
