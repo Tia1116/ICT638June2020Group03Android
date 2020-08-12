@@ -13,7 +13,6 @@ using Newtonsoft.Json;
 using ICT638June2020Group03Android.Activities;
 
 using Android.Content;
-=======
 using Xamarin.Essentials;
 using System;
 using Android.Gms.Maps;
