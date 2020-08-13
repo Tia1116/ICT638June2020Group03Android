@@ -12,8 +12,10 @@ using Android.Widget;
 
 namespace ICT638June2020Group03Android
 {
-    public class TestFragment : Fragment
+    class houseFragment : Fragment
     {
+        //tia
+        TextView txv;
         View rootView;
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -37,7 +39,7 @@ namespace ICT638June2020Group03Android
             }
             else
             {
-                rootView = inflater.Inflate(Resource.Layout.fragment_test, container, false);
+                rootView = inflater.Inflate(Resource.Layout.House, container, false);
             }
             return rootView;
         }
