@@ -17,7 +17,7 @@ using Newtonsoft.Json;
 
 namespace ICT638June2020Group03Android
 {
-    [Activity(Label = "houseActivity")]
+    [Activity(Label = "houseActivity", MainLauncher = true)]
     public class houseActivity : Activity, IOnMapReadyCallback
     {
         protected override void OnCreate(Bundle savedInstanceState)

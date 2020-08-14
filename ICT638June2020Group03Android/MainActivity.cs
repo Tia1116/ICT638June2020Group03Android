@@ -13,7 +13,7 @@ using Android.Views;
 
 namespace ICT638June2020Group03Android
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar")]
     public class MapWithMarkersActivity : AppCompatActivity
     {
     }
