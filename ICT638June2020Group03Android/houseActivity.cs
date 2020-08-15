@@ -72,11 +72,11 @@ namespace ICT638June2020Group03Android
         }
         private async void Btn1_Click(object sender, System.EventArgs e)
         {
-            TextView bathroomNumber = FindViewById<TextView>(Resource.Id.textView1);
+            TextView Address = FindViewById<TextView>(Resource.Id.textView3);
             TextView Rentfees = FindViewById<TextView>(Resource.Id.textView2);
             await Share.RequestAsync(new ShareTextRequest
             {
-                Text = "Hi, I am interested in the house at" + "you have posted for rent. Could I please have more details?",
+                Text = "Hi, I am interested in the house at" +Address.Text + "you have posted for rent. Could I please have more details?",
                 Title = "Share text"
             });
 
@@ -84,13 +84,14 @@ namespace ICT638June2020Group03Android
         }
         private async void Btn2_Click(object sender, System.EventArgs e)
         {
-            TextView name = FindViewById<TextView>(Resource.Id.textView1);
-            TextView phone = FindViewById<TextView>(Resource.Id.textView2);
-            string text = "Hi, I am" + name.Text + " saw your details on the Rent - a - go app.Could you please send me details of more houses for rent in the same price range ?";
+            TextView bathroomNumber = FindViewById<TextView>(Resource.Id.textView1);
+            TextView Rentfees = FindViewById<TextView>(Resource.Id.textView2);
+            TextView Address = FindViewById<TextView>(Resource.Id.textView3);
+            string text = "Hi, The bathroomNumber is" + bathroomNumber.Text + " saw your details on the Rent - a - go app.Could you please send me details of more houses for rent in the same price range ?";
 
             try
             {
-                var message = new SmsMessage(text, phone.Text);
+                var message = new SmsMessage(text, Rentfees.Text);
                 await Sms.ComposeAsync(message);
             }
             catch (FeatureNotSupportedException ex)
@@ -251,6 +252,7 @@ namespace ICT638June2020Group03Android
             {
                 getLastLocation(googleMap);
             }
+
         }
     }
 
