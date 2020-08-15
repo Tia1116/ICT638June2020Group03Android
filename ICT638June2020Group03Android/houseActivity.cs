@@ -13,6 +13,7 @@ using Android.Views;
 using System.Net;
 using System.IO;
 using System.Text;
+
 using Newtonsoft.Json;
 
 namespace ICT638June2020Group03Android
@@ -34,8 +35,8 @@ namespace ICT638June2020Group03Android
 
 
             FragmentManager.BeginTransaction()
-                                      .Add(Resource.Id.mapContainer1, mapFrag, "map_fragment")
-                                      .Commit();
+                                       .Add(Resource.Id.mapContainer1, mapFrag, "map_fragment")
+                                       .Commit();
 
             mapFrag.GetMapAsync(this);
         }

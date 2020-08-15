@@ -14,7 +14,6 @@ namespace ICT638June2020Group03Android
 {
     class houseFragment : Fragment
     {
-        //tia
         TextView txv;
         View rootView;
         public override void OnCreate(Bundle savedInstanceState)

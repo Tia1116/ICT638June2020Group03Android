@@ -9,24 +9,18 @@
 
 	<item
 	android:id="@+id/navigation_House"
-	android:enabled="true"
 	android:icon="@drawable/ic_House_black_24dp"
-	android:title="@string/title_home" 
-	app:showAsAction="ifRoom" />
+	android:title="@string/title_House"  />
 
 	<item
         android:id="@+id/navigation_Agent"
-		android:enabled="true"
         android:icon="@drawable/ic_Agent_black_24dp"
-        android:title="@string/title_Agent" 
-		app:showAsAction="ifRoom" />
+        android:title="@string/title_Agent" />
 
 	<item
         android:id="@+id/navigation_User"
-		android:enabled="true"
         android:icon="@drawable/ic_User_black_24dp"
-        android:title="@string/title_User"
-		app:showAsAction="ifRoom" />
+        android:title="@string/title_User" />
 
 </menu>
 
