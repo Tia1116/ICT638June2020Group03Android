@@ -11,4 +11,8 @@
   <string name=" PhoneNo">Phone Number</string>
   <string name=" share">share</string>
   <string name=" Email">Email</string>
+	<string name="tv1Text">Test</string>
+	<string name="title_House">Home</string>
+	<string name="title_agent">Dashboard</string>
+	<string name="title_User">Notifications</string>
 </resources>
